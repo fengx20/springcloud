@@ -1,0 +1,12 @@
+#添加eureka-client的配置文件application-replica.yml，让其同时注册到两个注册中心
+server:
+  port: 8102
+spring:
+  application:
+    name: eureka-client
+eureka:
+  client:
+    register-with-eureka: true #注册到Eureka的注册中心
+    fetch-registry: true #获取注册实例列表
+    service-url:
+      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/ #同时注册到两个注册中心
