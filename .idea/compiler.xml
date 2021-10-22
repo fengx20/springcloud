@@ -9,12 +9,14 @@
         <module name="springcloud" />
         <module name="eureka-security-server" />
         <module name="eureka-client" />
-        <module name="ribbon-service" />
-        <module name="user-service" />
-        <module name="feign-service" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="feign-service" target="1.8" />
+      <module name="ribbon-service" target="1.5" />
+      <module name="user-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
