@@ -9,6 +9,9 @@
         <module name="springcloud" />
         <module name="eureka-security-server" />
         <module name="eureka-client" />
+        <module name="ribbon-service" />
+        <module name="user-service" />
+        <module name="feign-service" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
@@ -18,6 +21,9 @@
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-security-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="feign-service" options="-parameters" />
+      <module name="ribbon-service" options="" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
